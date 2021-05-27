@@ -60,6 +60,7 @@ img {
 .header {
   background-color: var(--white-color);
   color: var(--black-color);
+  border-bottom: 1px solid #ececec;
 }
 
 .header a:hover,
@@ -68,10 +69,9 @@ img {
 }
 
 .header-line {
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  border-bottom: 1px solid #ECECEC ;
 }
 
 .logo-nav {
@@ -85,7 +85,6 @@ flex-direction: row;
   line-height: 1.19;
   margin-top: 24px;
   margin-bottom: 25px;
-  
 }
 
 .web {
@@ -106,7 +105,6 @@ flex-direction: row;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
 
 .nav .link:not(:last-child) {
   margin-right: 50px;
@@ -164,10 +162,11 @@ flex-direction: row;
   letter-spacing: 0.06em;
   cursor: pointer;
   text-align: center;
- margin-bottom: 106px;
+  margin-bottom: 106px;
 }
 
-.btn:hover, :focus {
+.btn:hover,
+:focus {
   color: var(--white-color);
   background-color: rgba(24, 140, 232, 1);
 }
@@ -209,13 +208,13 @@ flex-direction: row;
 
 .hide {
   position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .features .title {
@@ -245,10 +244,9 @@ flex-direction: row;
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
 }
- .our-job-items:last-child {
-   margin-right: 0;
- }
-
+.our-job-items:last-child {
+  margin-right: 0;
+}
 
 /*team*/
 .team {
@@ -268,9 +266,8 @@ flex-direction: row;
 }
 
 .team-items:last-child {
-margin-right: 0;
+  margin-right: 0;
 }
-
 
 .team .name {
   color: var(--black-color);
@@ -280,6 +277,7 @@ margin-right: 0;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 10px;
+  line-height: 100%;
 }
 
 .team .specialty {
@@ -288,13 +286,12 @@ margin-right: 0;
   line-height: 1.88;
   text-align: center;
   margin-bottom: 30px;
+  line-height: 100%;
 }
-
 
 /*footer*/
 .footer {
   background-color: var(--bacbackground-color-dark);
- 
 }
 
 .footer .logo {
@@ -333,6 +330,10 @@ margin-right: 0;
   padding-bottom: 60px;
 }
 
+.contacts-mailto {
+  padding-bottom: 9px;
+}
+
 /*portfolio*/
 /*filter*/
 
@@ -346,8 +347,8 @@ margin-right: 0;
   cursor: pointer;
   border: 0;
   background-color: var(--background-color-block);
-border-radius: 4px;
-padding: 6px 22px;
+  border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .btn-filret:hover,
@@ -382,7 +383,7 @@ padding: 6px 22px;
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
 }
 
 .project .project-item:nth-child(3n) {
@@ -409,4 +410,3 @@ padding: 6px 22px;
   line-height: 1.88;
   margin-bottom: 20px;
 }
-
